@@ -1,11 +1,11 @@
 <?php
 
-namespace webvimark\modules\UserManagement\components;
+namespace xvetx\modules\UserManagement\components;
 
-use webvimark\modules\UserManagement\models\rbacDB\AbstractItem;
-use webvimark\modules\UserManagement\models\rbacDB\Permission;
-use webvimark\modules\UserManagement\models\rbacDB\Role;
-use webvimark\modules\UserManagement\models\rbacDB\Route;
+use xvetx\modules\UserManagement\models\rbacDB\AbstractItem;
+use xvetx\modules\UserManagement\models\rbacDB\Permission;
+use xvetx\modules\UserManagement\models\rbacDB\Role;
+use xvetx\modules\UserManagement\models\rbacDB\Route;
 use Yii;
 use yii\base\InvalidParamException;
 use yii\helpers\Inflector;
@@ -23,7 +23,7 @@ class AuthHelper
 	/**
 	 * Example how to handle layouts from config file
 	 *
-	 * 'on beforeAction'=>['webvimark\modules\UserManagement\components\AuthHelper', 'layoutHandler'],
+	 * 'on beforeAction'=>['xvetx\modules\UserManagement\components\AuthHelper', 'layoutHandler'],
 	 *
 	 * @param \yii\base\ActionEvent $event
 	 */
@@ -147,6 +147,8 @@ class AuthHelper
 
 		// If it's not clean url like localhost/folder/index.php/bla-bla then remove
 		// baseUrl and leave only relative path 'bla-bla'
+		//Ввиду того что у нас шаблон advanced нам это приводит к конфликту site.com/admin/admin-payment - будет без доступа
+		/**
 		if ( $baseUrl )
 		{
 			if ( strpos($routeAsString, $baseUrl) === 0 )
@@ -154,6 +156,7 @@ class AuthHelper
 				$routeAsString = substr_replace($routeAsString, '', 0, strlen($baseUrl));
 			}
 		}
+		**/
 
 		$languagePrefix = '/' . Yii::$app->language . '/';
 
@@ -350,6 +353,17 @@ class AuthHelper
 					$className = $namespace . Inflector::id2camel($id) . 'Controller';
 					if ( strpos($className, '-') === false && class_exists($className) && is_subclass_of($className, 'yii\base\Controller') )
 					{
+						if($className =='Da\User\Controller\AbstractAuthItemController') continue;
+                                                if($id =='admin') continue;
+						if($prefix . $id =='admin') continue;
+						if($prefix . $id =='permission') continue;
+						if($prefix . $id =='profile') continue;
+						if($prefix . $id =='recovery') continue;
+						if($prefix . $id =='registration') continue;
+						if($prefix . $id =='role') continue;
+						if($prefix . $id =='security') continue;
+						if($prefix . $id =='settings') continue;
+						
 						$controller = new $className($prefix . $id, $module);
 						self::getActionRoutes($controller, $result);
 						$result[] = '/' . $controller->uniqueId . '/*';
