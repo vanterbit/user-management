@@ -353,10 +353,10 @@ class AuthHelper
 					$className = $namespace . Inflector::id2camel($id) . 'Controller';
 					if ( strpos($className, '-') === false && class_exists($className) && is_subclass_of($className, 'yii\base\Controller') )
 					{
-						//Наші костилі
+						//== Наші костилі ==
 						if($className =='Da\User\Controller\AbstractAuthItemController') continue;
 						if($className =='Da\User\Controller\api\v1\AdminController') continue;
-						//end
+						//== end ==
                                                 if($id =='admin') continue;
 						if($prefix . $id =='admin') continue;
 						if($prefix . $id =='permission') continue;
