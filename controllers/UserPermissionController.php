@@ -1,12 +1,12 @@
 <?php
 
-namespace webvimark\modules\UserManagement\controllers;
+namespace vanterbit\modules\UserManagement\controllers;
 
-use webvimark\components\BaseController;
-use webvimark\modules\UserManagement\models\rbacDB\Permission;
-use webvimark\modules\UserManagement\models\rbacDB\Role;
-use webvimark\modules\UserManagement\models\User;
-use webvimark\modules\UserManagement\UserManagementModule;
+use vanterbit\components\BaseController;
+use vanterbit\modules\UserManagement\models\rbacDB\Permission;
+use vanterbit\modules\UserManagement\models\rbacDB\Role;
+use vanterbit\modules\UserManagement\models\User;
+use vanterbit\modules\UserManagement\UserManagementModule;
 use yii\web\NotFoundHttpException;
 use Yii;
 

@@ -1,14 +1,14 @@
 <?php
 
-use webvimark\modules\UserManagement\models\User;
-use webvimark\modules\UserManagement\UserManagementModule;
+use vanterbit\modules\UserManagement\models\User;
+use vanterbit\modules\UserManagement\UserManagementModule;
 use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
-use webvimark\extensions\BootstrapSwitch\BootstrapSwitch;
+use vanterbit\extensions\BootstrapSwitch\BootstrapSwitch;
 
 /**
  * @var yii\web\View $this
- * @var webvimark\modules\UserManagement\models\User $model
+ * @var vanterbit\modules\UserManagement\models\User $model
  * @var yii\bootstrap\ActiveForm $form
  */
 ?>

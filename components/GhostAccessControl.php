@@ -1,9 +1,9 @@
 <?php
 
-namespace webvimark\modules\UserManagement\components;
+namespace vanterbit\modules\UserManagement\components;
 
-use webvimark\modules\UserManagement\models\rbacDB\Route;
-use webvimark\modules\UserManagement\models\User;
+use vanterbit\modules\UserManagement\models\rbacDB\Route;
+use vanterbit\modules\UserManagement\models\User;
 use yii\base\Action;
 use Yii;
 use yii\base\ActionFilter;

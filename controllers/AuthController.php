@@ -1,15 +1,15 @@
 <?php
 
-namespace webvimark\modules\UserManagement\controllers;
+namespace vanterbit\modules\UserManagement\controllers;
 
-use webvimark\components\BaseController;
-use webvimark\modules\UserManagement\components\UserAuthEvent;
-use webvimark\modules\UserManagement\models\forms\ChangeOwnPasswordForm;
-use webvimark\modules\UserManagement\models\forms\ConfirmEmailForm;
-use webvimark\modules\UserManagement\models\forms\LoginForm;
-use webvimark\modules\UserManagement\models\forms\PasswordRecoveryForm;
-use webvimark\modules\UserManagement\models\User;
-use webvimark\modules\UserManagement\UserManagementModule;
+use vanterbit\components\BaseController;
+use vanterbit\modules\UserManagement\components\UserAuthEvent;
+use vanterbit\modules\UserManagement\models\forms\ChangeOwnPasswordForm;
+use vanterbit\modules\UserManagement\models\forms\ConfirmEmailForm;
+use vanterbit\modules\UserManagement\models\forms\LoginForm;
+use vanterbit\modules\UserManagement\models\forms\PasswordRecoveryForm;
+use vanterbit\modules\UserManagement\models\User;
+use vanterbit\modules\UserManagement\UserManagementModule;
 use Yii;
 use yii\web\ForbiddenHttpException;
 use yii\web\NotFoundHttpException;

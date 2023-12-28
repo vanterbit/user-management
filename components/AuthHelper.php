@@ -1,11 +1,11 @@
 <?php
 
-namespace xvetx\modules\UserManagement\components;
+namespace vanterbit\modules\UserManagement\components;
 
-use xvetx\modules\UserManagement\models\rbacDB\AbstractItem;
-use xvetx\modules\UserManagement\models\rbacDB\Permission;
-use xvetx\modules\UserManagement\models\rbacDB\Role;
-use xvetx\modules\UserManagement\models\rbacDB\Route;
+use vanterbit\modules\UserManagement\models\rbacDB\AbstractItem;
+use vanterbit\modules\UserManagement\models\rbacDB\Permission;
+use vanterbit\modules\UserManagement\models\rbacDB\Role;
+use vanterbit\modules\UserManagement\models\rbacDB\Route;
 use Yii;
 use yii\base\InvalidParamException;
 use yii\helpers\Inflector;
@@ -23,7 +23,7 @@ class AuthHelper
 	/**
 	 * Example how to handle layouts from config file
 	 *
-	 * 'on beforeAction'=>['xvetx\modules\UserManagement\components\AuthHelper', 'layoutHandler'],
+	 * 'on beforeAction'=>['vanterbit\modules\UserManagement\components\AuthHelper', 'layoutHandler'],
 	 *
 	 * @param \yii\base\ActionEvent $event
 	 */

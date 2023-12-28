@@ -1,15 +1,15 @@
 <?php
 
-namespace webvimark\modules\UserManagement\controllers;
+namespace vanterbit\modules\UserManagement\controllers;
 
 
-use webvimark\modules\UserManagement\components\AuthHelper;
-use webvimark\modules\UserManagement\models\rbacDB\AbstractItem;
-use webvimark\modules\UserManagement\models\rbacDB\Permission;
-use webvimark\modules\UserManagement\models\rbacDB\Route;
-use webvimark\modules\UserManagement\models\rbacDB\search\PermissionSearch;
-use webvimark\components\AdminDefaultController;
-use webvimark\modules\UserManagement\UserManagementModule;
+use vanterbit\modules\UserManagement\components\AuthHelper;
+use vanterbit\modules\UserManagement\models\rbacDB\AbstractItem;
+use vanterbit\modules\UserManagement\models\rbacDB\Permission;
+use vanterbit\modules\UserManagement\models\rbacDB\Route;
+use vanterbit\modules\UserManagement\models\rbacDB\search\PermissionSearch;
+use vanterbit\components\AdminDefaultController;
+use vanterbit\modules\UserManagement\UserManagementModule;
 use Yii;
 
 class PermissionController extends AdminDefaultController
@@ -17,12 +17,12 @@ class PermissionController extends AdminDefaultController
 	/**
 	 * @var Permission
 	 */
-	public $modelClass = 'webvimark\modules\UserManagement\models\rbacDB\Permission';
+	public $modelClass = 'vanterbit\modules\UserManagement\models\rbacDB\Permission';
 
 	/**
 	 * @var PermissionSearch
 	 */
-	public $modelSearchClass = 'webvimark\modules\UserManagement\models\rbacDB\search\PermissionSearch';
+	public $modelSearchClass = 'vanterbit\modules\UserManagement\models\rbacDB\search\PermissionSearch';
 
 	/**
 	 * @param string $id

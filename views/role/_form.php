@@ -1,10 +1,10 @@
 <?php
 /**
  * @var yii\widgets\ActiveForm $form
- * @var webvimark\modules\UserManagement\models\rbacDB\Role $model
+ * @var vanterbit\modules\UserManagement\models\rbacDB\Role $model
  */
-use webvimark\modules\UserManagement\models\rbacDB\AuthItemGroup;
-use webvimark\modules\UserManagement\UserManagementModule;
+use vanterbit\modules\UserManagement\models\rbacDB\AuthItemGroup;
+use vanterbit\modules\UserManagement\UserManagementModule;
 use yii\bootstrap\ActiveForm;
 use yii\helpers\ArrayHelper;
 use yii\helpers\Html;

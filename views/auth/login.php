@@ -1,11 +1,11 @@
 <?php
 /**
  * @var $this yii\web\View
- * @var $model webvimark\modules\UserManagement\models\forms\LoginForm
+ * @var $model vanterbit\modules\UserManagement\models\forms\LoginForm
  */
 
-use webvimark\modules\UserManagement\components\GhostHtml;
-use webvimark\modules\UserManagement\UserManagementModule;
+use vanterbit\modules\UserManagement\components\GhostHtml;
+use vanterbit\modules\UserManagement\UserManagementModule;
 use yii\bootstrap\ActiveForm;
 use yii\helpers\Html;
 ?>
