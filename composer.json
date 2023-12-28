@@ -1,9 +1,9 @@
 {
-	"name": "webvimark/module-user-management",
+	"name": "vanterbit/module-user-management",
 	"description": "User with improved RBAC",
 	"autoload": {
 		"psr-4": {
-			"webvimark\\modules\\UserManagement\\": ""
+			"vanterbit\\modules\\UserManagement\\": ""
 		}
 	},
 	"require": {
